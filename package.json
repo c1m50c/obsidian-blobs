@@ -9,12 +9,13 @@
         "build": "bun scripts/build.ts"
     },
     "devDependencies": {
+        "@trivago/prettier-plugin-sort-imports": "^4.3.0",
         "@types/node": "^16.11.6",
         "builtin-modules": "3.3.0",
-        "typescript": "^5.0.0",
         "bun-types": "latest",
+        "esbuild": "^0.19.11",
         "obsidian": "latest",
         "prettier": "^3.1.1",
-        "esbuild": "^0.19.11"
+        "typescript": "^5.0.0"
     }
 }
