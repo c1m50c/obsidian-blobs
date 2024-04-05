@@ -1,0 +1,20 @@
+{
+    "name": "obsidian-blobs",
+    "version": "1.0.0",
+    "main": "main.js",
+    "license": "MIT",
+    "scripts": {
+        "format:check": "bunx prettier --check .",
+        "format:write": "bunx prettier --write .",
+        "build": "bun scripts/build.ts"
+    },
+    "devDependencies": {
+        "@types/node": "^16.11.6",
+        "builtin-modules": "3.3.0",
+        "typescript": "^5.0.0",
+        "bun-types": "latest",
+        "obsidian": "latest",
+        "prettier": "^3.1.1",
+        "esbuild": "^0.19.11"
+    }
+}

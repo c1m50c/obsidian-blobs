@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "lib": ["DOM", "ES5", "ES6", "ES7"],
+        "module": "ESNext",
+        "target": "ES6",
+        "moduleResolution": "node",
+        "allowImportingTsExtensions": true,
+        "noEmit": true,
+        "composite": true,
+        "strict": true,
+        "downlevelIteration": true,
+        "skipLibCheck": true,
+        "jsx": "react-jsx",
+        "allowSyntheticDefaultImports": true,
+        "forceConsistentCasingInFileNames": true,
+        "allowJs": true,
+        "inlineSourceMap": true,
+        "inlineSources": true,
+        "types": ["bun-types"]
+    }
+}
