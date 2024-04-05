@@ -1,4 +1,4 @@
-import { COMMANDS } from "./registry";
+import { registerCommands } from "./registry";
 import { BlobsSettings } from "./types";
 import { Plugin } from "obsidian";
 
@@ -14,8 +14,6 @@ export default class BlobsPlugin extends Plugin {
             await this.loadData(),
         );
 
-        for (const command of COMMANDS) {
-            this.addCommand(command);
-        }
+        registerCommands(this);
     }
 }
