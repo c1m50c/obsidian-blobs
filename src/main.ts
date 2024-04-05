@@ -1,6 +1,5 @@
 import { Plugin } from "obsidian";
-
-type BlobsSettings = {};
+import { BlobsSettings } from "./types";
 
 const DEFAULT_SETTINGS: BlobsSettings = {};
 
