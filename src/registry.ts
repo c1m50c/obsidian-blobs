@@ -7,12 +7,12 @@ export const registerCommands = (plugin: BlobsPlugin) => {
     const COMMANDS: Command[] = [
         {
             id: "blobs-pull",
-            name: "Blobs: Pull",
+            name: "Pull Changes",
             callback: () => pullCommand(plugin),
         },
         {
             id: "blobs-push",
-            name: "Blobs: Push",
+            name: "Push Changes",
             callback: () => pushCommand(plugin),
         },
     ];
