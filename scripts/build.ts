@@ -1,6 +1,6 @@
-import { copyFile } from "fs/promises";
 import builtins from "builtin-modules";
 import esbuild from "esbuild";
+import { copyFile } from "fs/promises";
 
 const EXTERNAL_DEPENDENCIES: string[] = [
     "obsidian",
