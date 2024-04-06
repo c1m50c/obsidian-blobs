@@ -1,0 +1,39 @@
+name: Verify
+
+on:
+  pull_request:
+
+jobs:
+  verify-plugin_build:
+    name: Verify Plugin - Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install Bun
+        uses: oven-sh/setup-bun@v1
+
+      - name: Install Dependencies
+        run: bun install
+
+      - name: Run - `bun run build`
+        run: bun run build
+
+  verify-plugin_format:
+    name: Verify Plugin - Format
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install Bun
+        uses: oven-sh/setup-bun@v1
+
+      - name: Install Dependencies
+        run: bun install
+
+      - name: Run - `bun run format:check`
+        run: bun run format:check
